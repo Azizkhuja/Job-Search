@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView, SafeAreaView } from "react-native";
 
 const Home = () => {
   return (
