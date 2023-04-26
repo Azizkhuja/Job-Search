@@ -12,9 +12,13 @@ import {
 const Home = () => {
   const router = useRouter();
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+      <Stack.Screen
+        options={{
+          headerStyle: { backgroundColor: COLORS.lightWhite },
+        }}
+      />
+    </SafeAreaView>
   );
 };
 
