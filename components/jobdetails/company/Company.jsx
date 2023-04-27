@@ -11,6 +11,8 @@ const Company = ({
   companyName,
   location,
   publisher,
+  city,
+  state,
 }) => {
   return (
     <View style={styles.container}>
@@ -37,7 +39,9 @@ const Company = ({
             resizeMode="contain"
             style={styles.locationImage}
           />
-          <Text style={styles.locationName}>{location}</Text>
+          <Text style={styles.locationName}>
+            {location} / {city}
+          </Text>
         </View>
       </View>
       <View>
