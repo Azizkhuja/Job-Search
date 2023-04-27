@@ -56,6 +56,12 @@ const styles = StyleSheet.create({
     fontFamily: FONT.regular,
     marginLeft: 2,
   },
+  publishedBy: {
+    fontSize: SIZES.medium - 2,
+    color: COLORS.gray,
+    fontFamily: FONT.regular,
+    marginTop: SIZES.xSmall - 4,
+  },
 });
 
 export default styles;
