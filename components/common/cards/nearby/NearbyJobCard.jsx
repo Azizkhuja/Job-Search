@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, Image } from "react-native";
 
 import styles from "./nearbyjobcard.style";
 import { checkImageURL } from "../../../../utils";
+import { icons } from "../../../../constants";
 
 const NearbyJobCard = ({ job, handleNavigate }) => {
   return (
@@ -13,7 +14,7 @@ const NearbyJobCard = ({ job, handleNavigate }) => {
               ? job.employer_logo
               : "https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqzO5H.jpg",
           }}
-          resizeMode='contain'
+          resizeMode="contain"
           style={styles.logImage}
         />
       </TouchableOpacity>
@@ -24,6 +25,16 @@ const NearbyJobCard = ({ job, handleNavigate }) => {
         </Text>
 
         <Text style={styles.jobType}>{job?.job_employment_type}</Text>
+        <View style={styles.isRemote}>
+          <Image
+            source={icons.location}
+            resizeMode="contain"
+            style={styles.locationImage}
+          />
+          <Text style={styles.jobType}>
+            {job?.job_is_remote ? "Remote" : "Onsite"}
+          </Text>
+        </View>
       </View>
     </TouchableOpacity>
   );
