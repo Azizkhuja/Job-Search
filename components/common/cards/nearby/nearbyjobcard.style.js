@@ -42,6 +42,15 @@ const styles = StyleSheet.create({
     marginTop: 3,
     textTransform: "capitalize",
   },
+  isRemote: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  locationImage: {
+    width: 16,
+    height: 16,
+    tintColor: COLORS.gray,
+  },
 });
 
 export default styles;
