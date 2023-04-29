@@ -49,6 +49,14 @@ const ShowAll = () => {
     retriveShowAll();
   }, []);
 
+  if (searchLoader) {
+    return <ActivityIndicator size="large" />;
+  }
+
+  if (searchError) {
+    return <Text>{searchError.message}</Text>;
+  }
+
   return <View></View>;
 };
 
