@@ -57,7 +57,19 @@ const ShowAll = () => {
     return <Text>{searchError.message}</Text>;
   }
 
-  return <View></View>;
+  return (
+    <View>
+      {searchResult.length > 0 && (
+        <FlatList
+          data={searchResult}
+          horizontal={false}
+          showsHorizontalScrollIndicator={false}
+          renderItem={({ item }) => <Text>{item.employer_name}</Text>}
+          keyExtractor={(item, index) => index.toString()}
+        />
+      )}
+    </View>
+  );
 };
 
 export default ShowAll;
