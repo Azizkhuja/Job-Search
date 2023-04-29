@@ -45,6 +45,10 @@ const ShowAll = () => {
     }
   };
 
+  useEffect(() => {
+    retriveShowAll();
+  }, []);
+
   return <View></View>;
 };
 
