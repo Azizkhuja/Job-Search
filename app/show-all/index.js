@@ -11,6 +11,8 @@ import {
 import { checkImageURL } from "../../utils";
 import { useFetch } from "../../hook/useFetch";
 import axios from "axios";
+import styles from "./showall.style";
+import { COLORS } from "../../constants";
 
 const ShowAll = () => {
   const [searchResult, setSearchResult] = useState([]);
@@ -50,7 +52,12 @@ const ShowAll = () => {
   }, []);
 
   if (searchLoader) {
-    return <ActivityIndicator size="large" />;
+    return (
+      <View style={[styles.container, styles.horizontal]}>
+        <ActivityIndicator size="large" color={COLORS.blue} />
+        <Text>Loading...</Text>
+      </View>
+    );
   }
 
   if (searchError) {
