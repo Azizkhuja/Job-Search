@@ -26,13 +26,13 @@ const ShowAll = () => {
       method: "GET",
       url: "https://jsearch.p.rapidapi.com/search",
       params: {
-        query: "Python developer in Texas, USA",
+        query: "React",
         page: "1",
         num_pages: "1",
       },
       headers: {
         "content-type": "application/octet-stream",
-        "X-RapidAPI-Key": "KJwZZIJSFimshuivMSVGaiYzkRomp15f2vKjsnK4bKzuUzVLzA",
+        "X-RapidAPI-Key": process.env.REACT_NATIVE_API_KEY,
         "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
       },
     };
