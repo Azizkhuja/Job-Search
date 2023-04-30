@@ -9,7 +9,6 @@ import {
   ScrollView,
 } from "react-native";
 import { checkImageURL } from "../../utils";
-import { useFetch } from "../../hook/useFetch";
 import axios from "axios";
 import styles from "./showall.style";
 import { COLORS } from "../../constants";
