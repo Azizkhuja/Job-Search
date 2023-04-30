@@ -12,6 +12,7 @@ import { checkImageURL } from "../../utils";
 import axios from "axios";
 import styles from "./showall.style";
 import { COLORS } from "../../constants";
+import { NearbyJobCard } from "../../components";
 
 const ShowAll = () => {
   const [searchResult, setSearchResult] = useState([]);
