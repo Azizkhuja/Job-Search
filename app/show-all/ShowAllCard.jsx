@@ -17,6 +17,12 @@ const ShowAllCard = ({ item }) => {
           style={styles.logImage}
         />
       </TouchableOpacity>
+
+      <View style={styles.textContainer}>
+        <Text style={styles.jobName} numberOfLines={1}>
+          {item?.job_title}
+        </Text>
+      </View>
     </TouchableOpacity>
   );
 };
