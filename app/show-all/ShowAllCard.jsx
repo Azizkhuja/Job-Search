@@ -22,6 +22,8 @@ const ShowAllCard = ({ item }) => {
         <Text style={styles.jobName} numberOfLines={1}>
           {item?.job_title}
         </Text>
+
+        <Text style={styles.jobType}>{item?.job_employment_type}</Text>
       </View>
     </TouchableOpacity>
   );
