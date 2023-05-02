@@ -13,6 +13,7 @@ import axios from "axios";
 import styles from "./showall.style";
 import { COLORS } from "../../constants";
 import { NearbyJobCard } from "../../components";
+import ShowAllCard from "./ShowAllCard";
 
 const ShowAll = () => {
   const [searchResult, setSearchResult] = useState([]);
@@ -71,7 +72,7 @@ const ShowAll = () => {
           data={searchResult}
           horizontal={false}
           showsHorizontalScrollIndicator={false}
-          renderItem={({ item }) => <Text>{item.employer_name}</Text>}
+          renderItem={({ item }) => <ShowAllCard item={item} />}
           keyExtractor={(item, index) => index.toString()}
         />
       )}
