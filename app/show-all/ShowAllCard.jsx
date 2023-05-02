@@ -30,6 +30,9 @@ const ShowAllCard = ({ item }) => {
             resizeMode="contain"
             style={styles.locationImage}
           />
+          <Text style={styles.jobType}>
+            {item?.job_is_remote ? "Remote" : "Onsite"}
+          </Text>
         </View>
       </View>
     </TouchableOpacity>
