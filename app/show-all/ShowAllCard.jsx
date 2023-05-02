@@ -5,7 +5,11 @@ import { icons } from "../../constants";
 
 const ShowAllCard = ({ item }) => {
   return (
-    
+    <TouchableOpacity style={styles.container}>
+      <TouchableOpacity style={styles.logoContainer}>
+        <Image resizeMode="contain" style={styles.logImage} />
+      </TouchableOpacity>
+    </TouchableOpacity>
   );
 };
 
