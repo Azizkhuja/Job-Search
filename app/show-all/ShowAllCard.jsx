@@ -3,9 +3,9 @@ import { checkImageURL } from "../../utils";
 import styles from "../../components/common/cards/nearby/nearbyjobcard.style";
 import { icons } from "../../constants";
 
-const ShowAllCard = ({ item }) => {
+const ShowAllCard = ({ item, handleNavigate }) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={handleNavigate}>
       <TouchableOpacity style={styles.logoContainer}>
         <Image
           source={{
