@@ -75,6 +75,24 @@ const ShowAll = () => {
   if (searchError) {
     return <Text>{searchError.message}</Text>;
   }
+
+  return (
+    <View>
+      {searchResult.length > 0 && (
+        <FlatList
+          data={searchResult}
+          horizontal={false}
+          showsHorizontalScrollIndicator={false}
+          renderItem={({ item }) => (
+            <ShowAllCard
+              item={item}
+              handleNavigate={() => router.push(`/job-details/${item.job_id}`)}
+            />
+          )}
+        />
+      )}
+    </View>
+  );
 };
 
 export default ShowAll;
