@@ -53,6 +53,10 @@ const ShowAll = () => {
       setFetching(false);
     }
   };
+
+  useEffect(() => {
+    retriveShowAll(page);
+  }, [page]);
 };
 
 export default ShowAll;
