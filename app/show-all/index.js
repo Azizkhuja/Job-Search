@@ -1,13 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  Text,
-  TouchableOpacity,
-  Image,
-  View,
-  FlatList,
-  ActivityIndicator,
-  ScrollView,
-} from "react-native";
+import { Text, View, FlatList, ActivityIndicator } from "react-native";
 import { useRouter } from "expo-router";
 import { checkImageURL } from "../../utils";
 import axios from "axios";
