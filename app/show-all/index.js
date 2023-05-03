@@ -89,6 +89,16 @@ const ShowAll = () => {
               handleNavigate={() => router.push(`/job-details/${item.job_id}`)}
             />
           )}
+          keyExtractor={(item, index) => index.toString()}
+          onEndReached={handleLoadMore}
+          onEndReachedThreshold={0.5}
+          ListFooterComponent={
+            fetching && (
+              <View style={[styles.container, styles.horizontal]}>
+                <Text>Loading more jobs...</Text>
+              </View>
+            )
+          }
         />
       )}
     </View>
