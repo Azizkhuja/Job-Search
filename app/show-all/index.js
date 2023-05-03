@@ -23,6 +23,36 @@ const ShowAll = () => {
   const [searchError, setSearchError] = useState(null);
   const [page, setPage] = useState(1);
   const [fetching, setFetching] = useState(false);
+
+  const retriveShowAll = async (pageNum) => {
+    setSearchLoader(true);
+
+    const options = {
+      method: "GET",
+      url: "https://jsearch.p.rapidapi.com/search",
+      params: {
+        query: "React",
+        page: pageNum,
+        num_pages: "1",
+      },
+      headers: {
+        "content-type": "application/octet-stream",
+        "X-RapidAPI-Key": process.env.REACT_NATIVE_API_KEY,
+        "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
+      },
+    };
+
+    try {
+      const response = await axios.request(options);
+      const newData = response.data.data;
+      setSearchResult((prevData) => [...prevData, ...newData]);
+    } catch (error) {
+      setSearchError(error);
+    } finally {
+      setSearchLoader(false);
+      setFetching(false);
+    }
+  };
 };
 
 export default ShowAll;
