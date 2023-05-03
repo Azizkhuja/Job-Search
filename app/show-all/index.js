@@ -57,6 +57,24 @@ const ShowAll = () => {
   useEffect(() => {
     retriveShowAll(page);
   }, [page]);
+
+  const handleLoadMore = () => {
+    setPage((prevPage) => prevPage + 1);
+    setFetching(true);
+  };
+
+  if (searchLoader && page === 1) {
+    return (
+      <View style={[styles.container, styles.horizontal]}>
+        <ActivityIndicator size="large" color={COLORS.blue} />
+        <Text>Loading...</Text>
+      </View>
+    );
+  }
+
+  if (searchError) {
+    return <Text>{searchError.message}</Text>;
+  }
 };
 
 export default ShowAll;
