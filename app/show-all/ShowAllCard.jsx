@@ -26,7 +26,7 @@ const ShowAllCard = ({ item, handleNavigate }) => {
         <Text style={styles.jobType}>{item?.job_employment_type}</Text>
         <View style={styles.isRemote}>
           <Image
-            source={icons.location}
+            source={item?.job_is_remote ? icons.remote : icons.location}
             resizeMode="contain"
             style={styles.locationImage}
           />
