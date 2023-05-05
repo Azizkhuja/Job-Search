@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Text, View, FlatList, ActivityIndicator } from "react-native";
-import { useRouter } from "expo-router";
+import { useRouter, Stack } from "expo-router";
 import axios from "axios";
 import styles from "./showall.style";
 import { COLORS } from "../../constants";
