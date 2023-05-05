@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     width: 16,
     height: 16,
     tintColor: COLORS.gray,
+    marginRight: 2,
   },
 });
 
