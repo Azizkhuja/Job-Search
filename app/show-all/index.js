@@ -68,6 +68,11 @@ const ShowAll = () => {
 
   return (
     <View>
+      <Stack.Screen
+        options={{
+          headerTitle: "Latest Jobs",
+        }}
+      />
       {searchResult.length > 0 && (
         <FlatList
           data={searchResult}
