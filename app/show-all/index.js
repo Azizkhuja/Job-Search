@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Text, View, FlatList, ActivityIndicator } from "react-native";
 import { useRouter } from "expo-router";
-import { checkImageURL } from "../../utils";
 import axios from "axios";
 import styles from "./showall.style";
 import { COLORS } from "../../constants";
-import { NearbyJobCard } from "../../components";
 import ShowAllCard from "./ShowAllCard";
 
 const ShowAll = () => {
