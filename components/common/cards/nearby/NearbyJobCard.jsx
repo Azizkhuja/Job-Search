@@ -27,7 +27,7 @@ const NearbyJobCard = ({ job, handleNavigate }) => {
         <Text style={styles.jobType}>{job?.job_employment_type}</Text>
         <View style={styles.isRemote}>
           <Image
-            source={icons.location}
+            source={job?.job_is_remote ? icons.remote : icons.location}
             resizeMode="contain"
             style={styles.locationImage}
           />
