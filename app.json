@@ -5,6 +5,12 @@
       "bundler": "metro"
     },
     "name": "JobSearch",
-    "slug": "JobSearch"
+    "slug": "JobSearch",
+    "android": {
+      "package": "com.ipro.talento"
+    },
+    "ios": {
+      "bundleIdentifier": "com.ipro.talento"
+    }
   }
 }
