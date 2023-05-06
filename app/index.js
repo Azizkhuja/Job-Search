@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { SafeAreaView, ScrollView, View } from "react-native";
+import { useEffect, useState } from "react";
+import { Button, SafeAreaView, ScrollView, Text, View } from "react-native";
 import { Stack, useRouter } from "expo-router";
 
 import { COLORS, icons, images, SIZES } from "../constants";
