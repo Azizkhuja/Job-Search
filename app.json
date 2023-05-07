@@ -7,10 +7,10 @@
     "name": "JobSearch",
     "slug": "JobSearch",
     "android": {
-      "package": "com.ipro.talento"
+      "package": "com.JobSearch.talento"
     },
     "ios": {
-      "bundleIdentifier": "com.ipro.talento"
+      "bundleIdentifier": "com.JobSearch.talento"
     }
   }
 }
