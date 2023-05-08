@@ -32,6 +32,10 @@ const Home = () => {
       "263726367933-pj0pfojsu0c82th77fv3dojvkr173av5.apps.googleusercontent.com",
   });
 
+  useEffect(() => {
+    handleSignInWithGoogle();
+  }, [response]);
+
   const getUserInfo = async (token) => {
     if (!token) return;
 
