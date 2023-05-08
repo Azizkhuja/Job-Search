@@ -36,6 +36,9 @@ const Home = () => {
       );
 
       const user = await response.json();
+
+      await AsyncStorage.setItem("@user", JSON.stringify(user));
+      setUserInfo(user);
     } catch (error) {}
   };
 
