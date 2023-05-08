@@ -36,6 +36,18 @@ const Home = () => {
     handleSignInWithGoogle();
   }, [response]);
 
+  async function handleSignInWithGoogle() {
+    const user = await AsyncStorage.getItem("@user");
+
+    if (!user) {
+      if (response?.type === "success") {
+        await getUserInfo(response.authentication.accessToken);
+      }
+    } else {
+      setUserInfo(JSON.parse(user));
+    }
+  }
+
   const getUserInfo = async (token) => {
     if (!token) return;
 
