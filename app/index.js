@@ -23,6 +23,14 @@ const Home = () => {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
   const [userInfo, setUserInfo] = useState(null);
+  const [request, response, promptAsync] = Google.useAuthRequest({
+    androidClientId:
+      "263726367933-cqdiihn4pkacv4mnad1fmlrevr7vakn9.apps.googleusercontent.com",
+    iosClientId:
+      "263726367933-i9h1f61b47iudrrvqmb148h5i2na0q5c.apps.googleusercontent.com",
+    webClientId:
+      "263726367933-pj0pfojsu0c82th77fv3dojvkr173av5.apps.googleusercontent.com",
+  });
 
   const getUserInfo = async (token) => {
     if (!token) return;
