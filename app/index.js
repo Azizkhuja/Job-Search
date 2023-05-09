@@ -91,7 +91,7 @@ const Home = () => {
         >
           <Text>{JSON.stringify(userInfo, null, 2)}</Text>
           <Button title="Yuup" onPress={() => promptAsync()} />
-          {/* <Text>{JSON.stringify(userInfo)}</Text> */}
+          <Text>{JSON.stringify(userInfo)}</Text>
           <Welcome
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
