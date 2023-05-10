@@ -113,9 +113,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace 'com.ipro.talento'
+    namespace 'com.JobSearch.talento'
     defaultConfig {
-        applicationId 'com.ipro.talento'
+        applicationId 'com.JobSearch.talento'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
