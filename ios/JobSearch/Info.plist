@@ -26,7 +26,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>acme</string>
-          <string>com.ipro.talento</string>
+          <string>com.JobSearch.talento</string>
         </array>
       </dict>
     </array>
