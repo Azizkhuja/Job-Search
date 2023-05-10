@@ -21,8 +21,7 @@ const Home = () => {
   const [userInfo, setUserInfo] = useState(null);
   const [request, response, promptAsync] = Google.useAuthRequest({
     androidClientId: process.env.REACT_NATIVE_ANDROID_GOOGLE_SIGN_IN,
-    iosClientId:
-      "263726367933-i9h1f61b47iudrrvqmb148h5i2na0q5c.apps.googleusercontent.com",
+    iosClientId: process.env.REACT_NATIVE_IOS_GOOGLE_SIGN_IN,
     webClientId:
       "263726367933-pj0pfojsu0c82th77fv3dojvkr173av5.apps.googleusercontent.com",
   });
