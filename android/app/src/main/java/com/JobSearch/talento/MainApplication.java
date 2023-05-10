@@ -1,4 +1,4 @@
-package com.ipro.talento;
+package com.JobSearch.talento;
 
 import android.app.Application;
 import android.content.res.Configuration;
