@@ -15,10 +15,6 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 WebBrowser.maybeCompleteAuthSession();
 
-// WEB: 263726367933-pj0pfojsu0c82th77fv3dojvkr173av5.apps.googleusercontent.com
-// iOS: 263726367933-i9h1f61b47iudrrvqmb148h5i2na0q5c.apps.googleusercontent.com
-// Android: 263726367933-cqdiihn4pkacv4mnad1fmlrevr7vakn9.apps.googleusercontent.com
-
 const Home = () => {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
