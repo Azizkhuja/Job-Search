@@ -73,7 +73,6 @@ const Home = () => {
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerLeft: () => (
-            // <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
             <Image source={icons.menu} style={{ width: 30, height: 30 }} />
           ),
           headerRight: () => (
