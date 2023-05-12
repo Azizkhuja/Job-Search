@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
-import { Button, SafeAreaView, ScrollView, Text, View } from "react-native";
+import {
+  Button,
+  SafeAreaView,
+  ScrollView,
+  Text,
+  View,
+  Image,
+} from "react-native";
 import { Stack, useRouter } from "expo-router";
 
 import { COLORS, icons, images, SIZES } from "../constants";
@@ -66,7 +73,8 @@ const Home = () => {
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerLeft: () => (
-            <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+            // <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+            <Image source={icons.menu} style={{ width: 30, height: 30 }} />
           ),
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={userInfo?.picture} dimension="100%" />
