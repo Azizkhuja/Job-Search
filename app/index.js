@@ -114,7 +114,7 @@ const Home = () => {
           </ScrollView>
         </>
       ) : (
-        
+        <Onboarding handleSignIn={() => promptAsync()} />
       )}
     </SafeAreaView>
   );
