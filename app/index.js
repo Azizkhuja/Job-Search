@@ -19,6 +19,7 @@ import {
 import * as WebBrowser from "expo-web-browser";
 import * as Google from "expo-auth-session/providers/google";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import Onboarding from "./Onboarding";
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -68,47 +69,53 @@ const Home = () => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
-      <Stack.Screen
-        options={{
-          headerStyle: { backgroundColor: COLORS.lightWhite },
-          headerShadowVisible: false,
-          headerLeft: () => (
-            <Image source={icons.menu} style={{ width: 30, height: 30 }} />
-          ),
-          headerRight: () => (
-            <ScreenHeaderBtn iconUrl={userInfo?.picture} dimension="100%" />
-          ),
-          headerTitle: "",
-        }}
-      />
-
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View
-          style={{
-            flex: 1,
-            padding: SIZES.medium,
-          }}
-        >
-          <Text>{JSON.stringify(userInfo, null, 2)}</Text>
-          <Button title="Yuup" onPress={() => promptAsync()} />
-          <Button
-            title="Log out"
-            onPress={() => AsyncStorage.removeItem("@user")}
-          />
-          <Welcome
-            searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
-            handleClick={() => {
-              if (searchTerm) {
-                router.push(`/search/${searchTerm}`);
-              }
+      {userInfo ? (
+        <>
+          <Stack.Screen
+            options={{
+              headerStyle: { backgroundColor: COLORS.lightWhite },
+              headerShadowVisible: false,
+              headerLeft: () => (
+                <Image source={icons.menu} style={{ width: 30, height: 30 }} />
+              ),
+              headerRight: () => (
+                <ScreenHeaderBtn iconUrl={userInfo?.picture} dimension="100%" />
+              ),
+              headerTitle: "",
             }}
           />
 
-          <Popularjobs />
-          <Nearbyjobs />
-        </View>
-      </ScrollView>
+          <ScrollView showsVerticalScrollIndicator={false}>
+            <View
+              style={{
+                flex: 1,
+                padding: SIZES.medium,
+              }}
+            >
+              <Text>{JSON.stringify(userInfo, null, 2)}</Text>
+              <Button title="Yuup" onPress={() => promptAsync()} />
+              <Button
+                title="Log out"
+                onPress={() => AsyncStorage.removeItem("@user")}
+              />
+              <Welcome
+                searchTerm={searchTerm}
+                setSearchTerm={setSearchTerm}
+                handleClick={() => {
+                  if (searchTerm) {
+                    router.push(`/search/${searchTerm}`);
+                  }
+                }}
+              />
+
+              <Popularjobs />
+              <Nearbyjobs />
+            </View>
+          </ScrollView>
+        </>
+      ) : (
+        
+      )}
     </SafeAreaView>
   );
 };
