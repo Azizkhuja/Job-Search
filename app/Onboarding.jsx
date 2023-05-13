@@ -1,7 +1,7 @@
-import { Text } from "react-native";
+import { Button } from "react-native";
 
-const Onboarding = () => {
-  return <Text>Onboarding</Text>;
+const Onboarding = ({ handleSignIn }) => {
+  return <Button title="Login" onPress={handleSignIn} />;
 };
 
 export default Onboarding;
