@@ -9,6 +9,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
   },
+  googleIconWrapper: {
+    margin: 1,
+    width: 40,
+    height: 40,
+    borderRadius: 2,
+    backgroundColor: "#fff",
+  },
 });
 
 export default styles;
