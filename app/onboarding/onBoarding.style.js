@@ -16,6 +16,12 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     backgroundColor: "#fff",
   },
+  googleIcon: {
+    marginTop: 11,
+    marginLeft: 11,
+    width: 18,
+    height: 18,
+  },
 });
 
 export default styles;
