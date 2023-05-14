@@ -22,6 +22,11 @@ const styles = StyleSheet.create({
     width: 18,
     height: 18,
   },
+  btnText: {
+    margin: 11,
+    color: "#fff",
+    fontSize: 14,
+  },
 });
 
 export default styles;
