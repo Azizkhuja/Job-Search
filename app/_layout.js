@@ -10,6 +10,8 @@ const Layout = () => {
     DMBold: require("../assets/fonts/DMSans-Bold.ttf"),
     DMMedium: require("../assets/fonts/DMSans-Medium.ttf"),
     DMRegular: require("../assets/fonts/DMSans-Regular.ttf"),
+    PSRegular: require("../assets/fonts/PSRegular.ttf"),
+    PSBold: require("../assets/fonts/PSBold.ttf"),
   });
 
   const onLayoutRootView = useCallback(async () => {
