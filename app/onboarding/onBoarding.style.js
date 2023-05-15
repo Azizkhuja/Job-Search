@@ -1,6 +1,11 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+  onboardingWrapper: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   googleBtn: {
     width: 184,
     height: 42,
