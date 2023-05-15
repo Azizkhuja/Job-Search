@@ -19,7 +19,7 @@ import {
 import * as WebBrowser from "expo-web-browser";
 import * as Google from "expo-auth-session/providers/google";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import Onboarding from "./onboarding/Onboarding";
+import OnboardingViewScreen from "./onboarding/OnboardingViewScreen";
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -113,7 +113,7 @@ const Home = () => {
           </ScrollView>
         </>
       ) : (
-        <Onboarding handleSignIn={() => promptAsync()} />
+        <OnboardingViewScreen handleSignIn={() => promptAsync()} />
       )}
     </SafeAreaView>
   );
