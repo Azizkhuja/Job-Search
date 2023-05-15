@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     margin: 11,
     color: "#fff",
     fontSize: 14,
+    fontFamily: "PSBold",
   },
 });
 
