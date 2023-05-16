@@ -6,6 +6,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  onboardingImage: {
+    width: "100%",
+    height: "100%",
+  },
   googleBtn: {
     width: 184,
     height: 42,
