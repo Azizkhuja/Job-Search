@@ -46,10 +46,9 @@ const OnboardingViewScreen = ({ handleSignIn }) => {
           },
         ]}
       />
-      <TouchableOpacity
-        style={styles.googleBtn}
-        onPress={handleSignIn}
-      ></TouchableOpacity>
+      <TouchableOpacity style={styles.googleBtn} onPress={handleSignIn}>
+        <Text style={styles.btnText}>Sign in with google</Text>
+      </TouchableOpacity>
     </>
   );
 };
