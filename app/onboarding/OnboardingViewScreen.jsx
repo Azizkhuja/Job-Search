@@ -20,6 +20,18 @@ const OnboardingViewScreen = ({ handleSignIn }) => {
             subtitle: "Done with React Native Onboarding Swiper",
             titleStyles: { color: "red" },
           },
+          {
+            backgroundColor: "#fff",
+            image: (
+              <Image
+                source={require("../../assets/images/image-5.png")}
+                style={styles.onboardingImage}
+                resizeMode="contain"
+              />
+            ),
+            title: "Onboarding",
+            subtitle: "Done with React Native Onboarding Swiper",
+          },
         ]}
       />
     </>
