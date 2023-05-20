@@ -133,7 +133,6 @@ const Home = () => {
               ),
               title: "Something",
               subtitle: "Done with React Native Onboarding Swiper",
-              titleStyles: { color: "red" },
             },
             {
               backgroundColor: "#fff",
