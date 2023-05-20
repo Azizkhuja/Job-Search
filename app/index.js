@@ -119,6 +119,7 @@ const Home = () => {
       ) : (
         <Onboarding
           DoneButtonComponent={DoneButton}
+          onSkip={() => router.push(`/login`)}
           pages={[
             {
               backgroundColor: "#fff",
