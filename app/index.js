@@ -20,6 +20,8 @@ import * as WebBrowser from "expo-web-browser";
 import * as Google from "expo-auth-session/providers/google";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import OnboardingViewScreen from "./onboarding/OnboardingViewScreen";
+import Onboarding from "react-native-onboarding-swiper";
+import styles from "./onboarding/onBoarding.style";
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -113,7 +115,48 @@ const Home = () => {
           </ScrollView>
         </>
       ) : (
-        <OnboardingViewScreen handleSignIn={() => promptAsync()} />
+        <Onboarding
+          pages={[
+            {
+              backgroundColor: "#fff",
+              image: (
+                <Image
+                  source={require("../assets/images/image-4.png")}
+                  style={styles.onboardingImage}
+                  resizeMode="contain"
+                />
+              ),
+              title: "Something",
+              subtitle: "Done with React Native Onboarding Swiper",
+              titleStyles: { color: "red" },
+            },
+            {
+              backgroundColor: "#fff",
+              image: (
+                <Image
+                  source={require("../assets/images/image-5.png")}
+                  style={styles.onboardingImage}
+                  resizeMode="contain"
+                />
+              ),
+              title: "Onboarding",
+              subtitle: "Done with React Native Onboarding Swiper",
+            },
+            {
+              backgroundColor: "#fff",
+              image: (
+                <Image
+                  source={require("../assets/images/image-6.png")}
+                  style={styles.onboardingImage}
+                  resizeMode="contain"
+                />
+              ),
+              title: "Onboarding",
+              subtitle: "Done with React Native Onboarding Swiper",
+            },
+          ]}
+        />
+        // <OnboardingViewScreen handleSignIn={() => promptAsync()} />
       )}
     </SafeAreaView>
   );
