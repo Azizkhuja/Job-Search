@@ -69,6 +69,8 @@ const Home = () => {
     } catch (error) {}
   };
 
+  const DoneButton = ({ ...props }) => <Button title={"Done"} {...props} />;
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       {userInfo ? (
