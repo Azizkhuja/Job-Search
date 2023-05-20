@@ -118,6 +118,7 @@ const Home = () => {
         </>
       ) : (
         <Onboarding
+          DoneButtonComponent={DoneButton}
           pages={[
             {
               backgroundColor: "#fff",
