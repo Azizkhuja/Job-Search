@@ -161,7 +161,7 @@ const Home = () => {
               },
             ]}
           />
-          <OnboardingViewScreen handleSignIn={() => promptAsync()} />
+          {/* <OnboardingViewScreen handleSignIn={() => promptAsync()} /> */}
         </>
       )}
     </SafeAreaView>
