@@ -3,7 +3,7 @@ import styles from "./onBoarding.style";
 
 const OnboardingViewScreen = ({ handleSignIn }) => {
   return (
-    <>
+    <View style={styles.onboardingWrapper}>
       <TouchableOpacity style={styles.googleBtn} onPress={handleSignIn}>
         <View style={styles.googleIconWrapper}>
           <Image
@@ -15,7 +15,7 @@ const OnboardingViewScreen = ({ handleSignIn }) => {
         </View>
         <Text style={styles.btnText}>Sign in with google</Text>
       </TouchableOpacity>
-    </>
+    </View>
   );
 };
 
