@@ -1,14 +1,6 @@
 import { useEffect, useState } from "react";
-import {
-  Button,
-  SafeAreaView,
-  ScrollView,
-  Text,
-  View,
-  Image,
-} from "react-native";
+import { Button, SafeAreaView, ScrollView, View, Image } from "react-native";
 import { Stack, useRouter } from "expo-router";
-
 import { COLORS, icons, images, SIZES } from "../../constants";
 import {
   Nearbyjobs,
