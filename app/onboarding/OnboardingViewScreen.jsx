@@ -6,9 +6,7 @@ const OnboardingViewScreen = ({ handleSignIn }) => {
     <View style={styles.onboardingWrapper}>
       <Image
         style={styles.googleIcon}
-        source={{
-          uri: "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-icon-logo-png-transparent-svg-vector-bie-supply-14.png",
-        }}
+        source={require("../../assets/images/image-7.png")}
       />
       <TouchableOpacity style={styles.googleBtn} onPress={handleSignIn}>
         <View style={styles.googleIconWrapper}>
