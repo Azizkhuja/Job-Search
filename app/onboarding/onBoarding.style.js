@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   btnText: {
     margin: 11,
     color: "#fff",
-    fontSize: 14,
+    fontSize: 18,
     fontFamily: "PSBold",
   },
 });
