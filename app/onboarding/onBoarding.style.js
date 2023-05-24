@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
   onboardingImage: {
     width: "100%",
-    height: "100%",
+    height: "80%",
   },
   googleBtn: {
     width: 184,
