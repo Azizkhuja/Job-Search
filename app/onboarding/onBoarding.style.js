@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
   },
   googleIconWrapper: {
     margin: 1,
-    width: 40,
-    height: 40,
+    width: 50,
+    height: 50,
     borderRadius: 2,
     backgroundColor: "#fff",
   },
