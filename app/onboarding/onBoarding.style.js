@@ -28,8 +28,8 @@ const styles = StyleSheet.create({
   googleIcon: {
     marginTop: 11,
     marginLeft: 11,
-    width: 18,
-    height: 18,
+    width: 30,
+    height: 30,
   },
   btnText: {
     margin: 11,
