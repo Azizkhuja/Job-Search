@@ -4,7 +4,10 @@ import styles from "./onBoarding.style";
 const OnboardingViewScreen = ({ handleSignIn }) => {
   return (
     <View style={styles.onboardingWrapper}>
-      <Image source={require("../../assets/images/image-7.png")} />
+      <Image
+        style={styles.heroImage}
+        source={require("../../assets/images/image-7.png")}
+      />
       <TouchableOpacity style={styles.googleBtn} onPress={handleSignIn}>
         <View style={styles.googleIconWrapper}>
           <Image
