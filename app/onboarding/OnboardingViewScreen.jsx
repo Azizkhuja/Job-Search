@@ -5,7 +5,7 @@ const OnboardingViewScreen = ({ handleSignIn }) => {
   return (
     <View style={styles.onboardingWrapper}>
       <Image
-        style={styles.heroImage}
+        style={styles.onboardingImage}
         source={require("../../assets/images/image-7.png")}
       />
       <TouchableOpacity style={styles.googleBtn} onPress={handleSignIn}>
