@@ -7,7 +7,7 @@ const OnboardingViewScreen = ({ handleSignIn }) => {
       <Image
         style={styles.onboardingImage}
         source={require("../../assets/images/image-7.png")}
-        resizeMode="contain"
+        // resizeMode="contain"
       />
       <TouchableOpacity style={styles.googleBtn} onPress={handleSignIn}>
         <View style={styles.googleIconWrapper}>
