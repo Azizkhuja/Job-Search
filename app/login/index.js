@@ -60,53 +60,70 @@ const Login = ({ handleSignIn }) => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
-      {userInfo ? (
-        <>
-          <Stack.Screen
-            options={{
-              headerStyle: { backgroundColor: COLORS.lightWhite },
-              headerShadowVisible: false,
-              headerLeft: () => (
-                <Image source={icons.menu} style={{ width: 30, height: 30 }} />
-              ),
-              headerRight: () => (
-                <ScreenHeaderBtn iconUrl={userInfo?.picture} dimension="100%" />
-              ),
-              headerTitle: "",
-            }}
-          />
+    <>
+      <Stack.Screen
+        options={{
+          headerLeft: () => <Button title="" />,
+          headerTitle: "",
+          headerShadowVisible: false,
+          headerBackVisible: false,
+        }}
+      />
 
-          <ScrollView showsVerticalScrollIndicator={false}>
-            <View
-              style={{
-                flex: 1,
-                padding: SIZES.medium,
+      <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+        {userInfo ? (
+          <>
+            <Stack.Screen
+              options={{
+                headerStyle: { backgroundColor: COLORS.lightWhite },
+                headerShadowVisible: false,
+                headerLeft: () => (
+                  <Image
+                    source={icons.menu}
+                    style={{ width: 30, height: 30 }}
+                  />
+                ),
+                headerRight: () => (
+                  <ScreenHeaderBtn
+                    iconUrl={userInfo?.picture}
+                    dimension="100%"
+                  />
+                ),
+                headerTitle: "",
               }}
-            >
-              <Button
-                title="Log out"
-                onPress={() => AsyncStorage.removeItem("@user")}
-              />
-              <Welcome
-                searchTerm={searchTerm}
-                setSearchTerm={setSearchTerm}
-                handleClick={() => {
-                  if (searchTerm) {
-                    router.push(`/search/${searchTerm}`);
-                  }
-                }}
-              />
+            />
 
-              <Popularjobs />
-              <Nearbyjobs />
-            </View>
-          </ScrollView>
-        </>
-      ) : (
-        <OnboardingViewScreen handleSignIn={() => promptAsync()} />
-      )}
-    </SafeAreaView>
+            <ScrollView showsVerticalScrollIndicator={false}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: SIZES.medium,
+                }}
+              >
+                <Button
+                  title="Log out"
+                  onPress={() => AsyncStorage.removeItem("@user")}
+                />
+                <Welcome
+                  searchTerm={searchTerm}
+                  setSearchTerm={setSearchTerm}
+                  handleClick={() => {
+                    if (searchTerm) {
+                      router.push(`/search/${searchTerm}`);
+                    }
+                  }}
+                />
+
+                <Popularjobs />
+                <Nearbyjobs />
+              </View>
+            </ScrollView>
+          </>
+        ) : (
+          <OnboardingViewScreen handleSignIn={() => promptAsync()} />
+        )}
+      </SafeAreaView>
+    </>
   );
 };
 
