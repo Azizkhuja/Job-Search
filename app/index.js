@@ -15,6 +15,7 @@ const Home = () => {
         options={{
           headerTitle: "",
           headerShadowVisible: false,
+          headerBackVisible: false,
         }}
       />
       <Onboarding
