@@ -3,6 +3,7 @@ import { useRouter } from "expo-router";
 import { COLORS } from "../constants";
 import Onboarding from "react-native-onboarding-swiper";
 import styles from "./onboarding/onBoarding.style";
+import { Stack } from "expo-router";
 
 const Home = () => {
   const router = useRouter();
