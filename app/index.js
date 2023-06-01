@@ -14,6 +14,7 @@ const Home = () => {
       <Stack.Screen
         options={{
           headerTitle: "",
+          headerShadowVisible: false,
         }}
       />
       <Onboarding
