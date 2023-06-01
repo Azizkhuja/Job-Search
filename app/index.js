@@ -6,7 +6,9 @@ import styles from "./onboarding/onBoarding.style";
 
 const Home = () => {
   const router = useRouter();
-  const DoneButton = ({ ...props }) => <Button title={"Done"} {...props} />;
+  const DoneButton = ({ ...props }) => (
+    <Button color="#fff" title={"Done"} {...props} />
+  );
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
