@@ -7,7 +7,7 @@ import styles from "./onboarding/onBoarding.style";
 const Home = () => {
   const router = useRouter();
   const DoneButton = ({ ...props }) => (
-    <Button color="#fff" title={"Done"} {...props} />
+    <Button color="#000" title={"Done"} {...props} />
   );
 
   return (
