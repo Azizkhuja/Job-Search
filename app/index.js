@@ -33,7 +33,7 @@ const Home = () => {
                 resizeMode="contain"
               />
             ),
-            title: "Something",
+            title: "Ignite Your Inner Potential",
             subtitle: "Done with React Native Onboarding Swiper",
           },
           {
