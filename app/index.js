@@ -58,7 +58,7 @@ const Home = () => {
               />
             ),
             title: "Empower Your Journey to Excellence",
-            subtitle: "Done with React Native Onboarding Swiper",
+            subtitle: "Embrace challenges, embrace growth",
           },
         ]}
       />
