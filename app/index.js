@@ -57,7 +57,7 @@ const Home = () => {
                 resizeMode="contain"
               />
             ),
-            title: "Onboarding",
+            title: "Empower Your Journey to Excellence",
             subtitle: "Done with React Native Onboarding Swiper",
           },
         ]}
