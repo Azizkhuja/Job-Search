@@ -34,7 +34,7 @@ const Home = () => {
               />
             ),
             title: "Ignite Your Inner Potential",
-            subtitle: "Done with React Native Onboarding Swiper",
+            subtitle: "Unleash your hidden strengths",
           },
           {
             backgroundColor: "#fff",
