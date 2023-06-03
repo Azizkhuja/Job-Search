@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   onboardingImage: {
     width: "100%",
     height: 300,
-    margin: -20,
+    marginTop: -90,
   },
   googleBtn: {
     width: 240,
