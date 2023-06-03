@@ -57,7 +57,7 @@ const Home = () => {
                 resizeMode="contain"
               />
             ),
-            title: "Empower Your Journey to Excellence",
+            title: "Innovate. Evolve. Thrive.",
             subtitle: "Embrace challenges, embrace growth",
           },
         ]}
