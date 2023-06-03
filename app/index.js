@@ -46,7 +46,7 @@ const Home = () => {
               />
             ),
             title: "Discover Your Path to Success",
-            subtitle: "Done with React Native Onboarding Swiper",
+            subtitle: "Dare to dream, achieve greatness",
           },
           {
             backgroundColor: "#fff",
