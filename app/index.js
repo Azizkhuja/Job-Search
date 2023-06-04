@@ -45,7 +45,7 @@ const Home = () => {
                 resizeMode="contain"
               />
             ),
-            title: "Discover Your Path to Success",
+            title: "Discover Your Path to Success.",
             subtitle: "Dare to dream, achieve greatness",
           },
           {
