@@ -33,7 +33,7 @@ const Home = () => {
                 resizeMode="contain"
               />
             ),
-            title: "Ignite Your Inner Potential",
+            title: "Ignite Your Inner Potential.",
             subtitle: "Unleash your hidden strengths",
           },
           {
