@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   googleBtn: {
     width: 240,
     height: 52,
-    // backgroundColor: "#4285f4",
+    backgroundColor: "#4285f4",
     borderRadius: 2,
     flexDirection: "row",
     alignItems: "center",
