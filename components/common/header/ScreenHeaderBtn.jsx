@@ -1,4 +1,5 @@
 import { Image, TouchableOpacity } from "react-native";
+import { useRouter, useSearchParams } from "expo-router";
 
 import styles from "./screenheader.style";
 
