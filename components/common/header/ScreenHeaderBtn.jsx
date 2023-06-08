@@ -6,7 +6,10 @@ import styles from "./screenheader.style";
 const ScreenHeaderBtn = ({ iconUrl, dimension }) => {
   const router = useRouter();
   return (
-    <TouchableOpacity style={styles.btnContainer}>
+    <TouchableOpacity
+      style={styles.btnContainer}
+      onPress={router.push("/profile")}
+    >
       <Image
         source={{ uri: iconUrl }}
         resizeMode="cover"
