@@ -3,9 +3,10 @@ import { useRouter, useSearchParams } from "expo-router";
 
 import styles from "./screenheader.style";
 
-const ScreenHeaderBtn = ({ iconUrl, dimension, handlePress }) => {
+const ScreenHeaderBtn = ({ iconUrl, dimension }) => {
+  const router = useRouter();
   return (
-    <TouchableOpacity style={styles.btnContainer} onPress={handlePress}>
+    <TouchableOpacity style={styles.btnContainer}>
       <Image
         source={{ uri: iconUrl }}
         resizeMode="cover"
