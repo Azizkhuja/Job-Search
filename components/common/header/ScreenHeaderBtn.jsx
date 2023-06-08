@@ -6,6 +6,7 @@ import styles from "./screenheader.style";
 const ScreenHeaderBtn = ({ iconUrl, dimension }) => {
   const router = useRouter();
 
+  // Added the handlePress function
   const handlePress = () => {
     router.push("/profile");
   };
