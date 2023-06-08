@@ -12,10 +12,7 @@ const ScreenHeaderBtn = ({ iconUrl, dimension }) => {
   };
 
   return (
-    <TouchableOpacity
-      style={styles.btnContainer}
-      onPress={router.push("/profile")}
-    >
+    <TouchableOpacity style={styles.btnContainer} onPress={handlePress}>
       <Image
         source={{ uri: iconUrl }}
         resizeMode="cover"
