@@ -71,13 +71,6 @@ const JobSearch = () => {
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
-          headerLeft: () => (
-            <ScreenHeaderBtn
-              iconUrl={icons.left}
-              dimension="60%"
-              handlePress={() => router.back()}
-            />
-          ),
           headerTitle: "",
         }}
       />
