@@ -7,6 +7,8 @@ const ProfileInfo = () => {
 
   const handleLogOut = async () => {
     try {
+      // Remove user data from AsyncStorage
+      await AsyncStorage.removeItem("@user");
     } catch (error) {
       console.log("Error logging out:", error);
     }
