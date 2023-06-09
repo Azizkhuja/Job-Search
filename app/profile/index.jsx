@@ -5,7 +5,10 @@ import { useRouter } from "expo-router";
 const ProfileInfo = () => {
   const router = useRouter();
 
-  const handleLogOut = async () => {};
+  const handleLogOut = async () => {
+    try {
+    } catch (error) {}
+  };
   return <Button title="Log out" onPress={handleLogOut} />;
 };
 
