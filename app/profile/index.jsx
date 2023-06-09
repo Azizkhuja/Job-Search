@@ -7,7 +7,9 @@ const ProfileInfo = () => {
 
   const handleLogOut = async () => {
     try {
-    } catch (error) {}
+    } catch (error) {
+      console.log("Error logging out:", error);
+    }
   };
   return <Button title="Log out" onPress={handleLogOut} />;
 };
