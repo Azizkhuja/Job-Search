@@ -4,4 +4,6 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [userInfo, setUserInfo] = useState(null);
+
+  return <AppContext.Provider></AppContext.Provider>;
 };
