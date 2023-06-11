@@ -6,8 +6,8 @@ export const AppProvider = ({ children }) => {
   const [userInfo, setUserInfo] = useState(null);
 
   return (
-    <AppContext.Provider
-      value={{ userInfo, setUserInfo }}
-    ></AppContext.Provider>
+    <AppContext.Provider value={{ userInfo, setUserInfo }}>
+      {children}
+    </AppContext.Provider>
   );
 };
