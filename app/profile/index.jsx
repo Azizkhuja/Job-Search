@@ -11,7 +11,7 @@ const ProfileInfo = () => {
       await AsyncStorage.removeItem("@user");
 
       // Redirect to login page
-      router.push("/login");
+      router.push("/");
     } catch (error) {
       console.log("Error logging out:", error);
     }
