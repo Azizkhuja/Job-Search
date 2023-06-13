@@ -20,7 +20,7 @@ const ProfileInfo = ({ userInfo }) => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: "",
+          headerTitle: "Profile information",
         }}
       />
       <Button title="Log out" onPress={handleLogOut} />
