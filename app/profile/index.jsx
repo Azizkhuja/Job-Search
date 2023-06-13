@@ -18,6 +18,11 @@ const ProfileInfo = ({ userInfo }) => {
   };
   return (
     <>
+      <Stack.Screen
+        options={{
+          headerTitle: "",
+        }}
+      />
       <Button title="Log out" onPress={handleLogOut} />
     </>
   );
