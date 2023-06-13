@@ -16,7 +16,11 @@ const ProfileInfo = ({ userInfo }) => {
       console.log("Error logging out:", error);
     }
   };
-  return <Button title="Log out" onPress={handleLogOut} />;
+  return (
+    <>
+      <Button title="Log out" onPress={handleLogOut} />
+    </>
+  );
 };
 
 export default ProfileInfo;
