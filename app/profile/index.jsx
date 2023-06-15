@@ -1,10 +1,12 @@
-import { Text, Button } from "react-native";
+import { Text, View, Button, Image } from "react-native";
 import { Stack } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRouter } from "expo-router";
+import styles from "./profile.style";
 
 const ProfileInfo = ({ userInfo }) => {
   const router = useRouter();
+  console.log(userInfo);
   const handleLogOut = async () => {
     try {
       // Remove user data from AsyncStorage
@@ -23,6 +25,18 @@ const ProfileInfo = ({ userInfo }) => {
           headerTitle: "Profile information",
         }}
       />
+      <View style={styles.container}>
+        <View style={styles.profileImageContainer}>
+          <View style={styles.profileImageWrapper}>
+            {userInfo ? (
+              <Text style={{ color: "red" }}>{userInfo.email}</Text>
+            ) : (
+              <Text style={{ color: "red" }}>Nooo</Text>
+            )}
+          </View>
+        </View>
+        <View></View>
+      </View>
       <Button title="Log out" onPress={handleLogOut} />
     </>
   );
