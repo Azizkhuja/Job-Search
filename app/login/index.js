@@ -101,10 +101,6 @@ const Login = ({ handleSignIn }) => {
                   padding: SIZES.medium,
                 }}
               >
-                <Button
-                  title="Log out"
-                  onPress={() => AsyncStorage.removeItem("@user")}
-                />
                 <Welcome
                   searchTerm={searchTerm}
                   setSearchTerm={setSearchTerm}
@@ -119,7 +115,7 @@ const Login = ({ handleSignIn }) => {
                 <Nearbyjobs />
               </View>
             </ScrollView>
-            <ProfileInfo userInfo={userInfo} />
+            {/* <ProfileInfo userInfo={userInfo} /> */}
           </>
         ) : (
           <OnboardingViewScreen handleSignIn={() => promptAsync()} />
