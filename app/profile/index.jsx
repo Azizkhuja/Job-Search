@@ -27,13 +27,7 @@ const ProfileInfo = ({ userInfo }) => {
       />
       <View style={styles.container}>
         <View style={styles.profileImageContainer}>
-          <View style={styles.profileImageWrapper}>
-            {userInfo ? (
-              <Text style={{ color: "red" }}>{userInfo.email}</Text>
-            ) : (
-              <Text style={{ color: "red" }}>Nooo</Text>
-            )}
-          </View>
+          <View style={styles.profileImageWrapper}></View>
         </View>
         <View></View>
       </View>
