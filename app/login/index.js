@@ -115,7 +115,6 @@ const Login = ({ handleSignIn }) => {
                 <Nearbyjobs />
               </View>
             </ScrollView>
-            {/* <ProfileInfo userInfo={userInfo} /> */}
           </>
         ) : (
           <OnboardingViewScreen handleSignIn={() => promptAsync()} />
