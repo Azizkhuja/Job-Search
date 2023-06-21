@@ -27,7 +27,13 @@ const ProfileInfo = ({ userInfo }) => {
       />
       <View style={styles.container}>
         <View style={styles.profileImageContainer}>
-          <View style={styles.profileImageWrapper}></View>
+          <View style={styles.profileImageWrapper}>
+            <Image
+              source={{
+                uri: "https://images.unsplash.com/photo-1504349127888-431216363500?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+              }}
+            />
+          </View>
         </View>
         <View></View>
       </View>
