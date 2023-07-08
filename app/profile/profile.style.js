@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   profileImageContainer: {
     height: "40%",
     width: "100%",
-    backgroundColor: "#c0c0c0",
+    backgroundColor: "#000",
     alignItems: "center",
   },
   imageSelf: {
